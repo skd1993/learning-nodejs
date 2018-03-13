@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: yellow};
+            h2{font-size: 30px}
+        </style>
+    </head>
+    <body>
+        <% include partials/nav.ejs %>
+        <h1>Heloooooooooooo <%= person %></h1>
+        <p>Age: <%= data.age %></p>
+        <p>Job: <%= data.job %></p>
+        <h2>Hobbies</h2>
+        <ul>
+            <% data.hobbies.forEach(function(item){ %>
+                <li><%= item %></li>
+            <% }); %>
+        </ul>
+    </body>
+</html>

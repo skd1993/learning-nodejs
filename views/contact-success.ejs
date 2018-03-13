@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: yellow};
+            h2{font-size: 30px}
+        </style>
+    </head>
+    <body>
+        <% include partials/nav.ejs %>
+        <h1>Contact</h1>
+        <p>thanks for contacting <%= data.who %> in the <%= data.dept %>.</p>
+        <p>We will reply to u at <%= data.email %></p>
+    </body>
+</html>
